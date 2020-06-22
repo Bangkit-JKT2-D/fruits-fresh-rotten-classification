@@ -1,5 +1,5 @@
 # Fresh-Rotten-Fruits-Predictor
---this is a final project assignment--
+--this is a final project assignment-- <br/>
 We create a Tensorflow model to predict the fresh and rotten fruits. By doing so, we hope we can easily separate fresh and rotten fruits from fruit images.
 
 ## Project Structure
@@ -29,10 +29,26 @@ We create a Tensorflow model to predict the fresh and rotten fruits. By doing so
 ```
 
 ## Datasets
-Training Data and Testing Data that were used are sourced from kaggle :https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification
+Training Data and Testing Data that were used are sourced from kaggle :https://www.kaggle.com/sriramr/fruits-fresh-and-rotten-for-classification <br/> The dataset contains 13599 images of apple, banana, and orange divided into fresh and rotten each.
+Dataset       | Directories     | Files
+------------- | -------------   | -------------
+Test          | freshapples     | 395
+|             | freshbanana     | 381
+|             | freshoranges    | 388
+|             | rottenapples    | 601
+|             | rottenbanana    | 530
+|             | rottenoranges   | 403
+Train         | freshapples     | 1693
+|             | freshbanana     | 1581
+|             | freshoranges    | 1466
+|             | rottenapples    | 2342
+|             | rottenbanana    | 2224
+|             | rottenoranges   | 1595
+
+
 
 ## Network
-For this model, we use Convolutional Neural Networks. Our model used transfer learning InceptionV3 for the baseline model with 6 class(Fresh and Rotten banana, apple, and orange). We also using VGG16 for the improved model with 2 class(Fresh and Rotten Fruit) which is our final model.
+For this model, we use Convolutional Neural Networks. Our model used transfer learning InceptionV3 for the baseline model with 6 classes (Fresh and Rotten banana, apple, and orange). We also using VGG16 for the improved model with 2 classes (Fresh and Rotten Fruit) as our final model.
 
 ## Prequisites
 You don't need to install anything since its written in Google Colab which is a cloud service
